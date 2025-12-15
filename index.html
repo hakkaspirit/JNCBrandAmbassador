@@ -216,62 +216,62 @@
     
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
-            <label for="name" data-key="form_name_label" class="block text-sm font-medium text-gray-700 mb-1">推廣者暱稱 <span class="text-sky-500">*</span></label>
+            <label for="name" data-key="form_name_label" class="block text-sm font-medium text-gray-700 mb-1">氏名／プロモーションニックネーム <span class="text-sky-500">*</span></label>
             <input type="text" id="name" name="entry.289485734" required
-                   data-key-placeholder="form_name_placeholder" placeholder="例：王小明 / 旅遊達人A"
+                   data-key-placeholder="form_name_placeholder" placeholder="例：山田太郎 / 旅の達人A"
                    class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500 sm:text-sm">
         </div>
         <div>
-            <label for="contact" class="block text-sm font-medium text-gray-700 mb-1">聯絡方式 (Line ID / 手機 / Email) <span class="text-sky-500">*</span></label>
+            <label for="contact" data-key="form_contact_label" class="block text-sm font-medium text-gray-700 mb-1">連絡先 (Line ID / 電話 / Email) <span class="text-sky-500">*</span></label>
             <input type="text" id="contact" name="entry.2042662270" required
-                   placeholder="請填寫 Line ID 或手機號碼"
+                   data-key-placeholder="form_contact_placeholder" placeholder="Line ID または 電話番号"
                    class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500 sm:text-sm">
         </div>
     </div>
 
     <div class="mt-6">
-        <label for="platform" data-key="form_platform_label" class="block text-sm font-medium text-gray-700 mb-1">主要推廣平台 (例：YouTube/IG/部落格)</label>
+        <label for="platform" data-key="form_platform_label" class="block text-sm font-medium text-gray-700 mb-1">主要プロモーションプラットフォーム</label>
         <input type="text" id="platform" name="entry.322116969"
-               data-key-placeholder="form_platform_placeholder" placeholder="IG / FB / YouTube 連結"
+               data-key-placeholder="form_platform_placeholder" placeholder="URL"
                class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500 sm:text-sm">
     </div>
 
     <div class="mt-6">
         <label class="block text-sm font-medium text-gray-700 mb-2">
-            您是否了解並歡迎介紹台灣客人赴日消費之合作推廣？ <span class="text-sky-500">*</span>
+            <span data-key="form_intent_label">提携について理解していますか？</span> <span class="text-sky-500">*</span>
         </label>
         <div class="space-y-3">
             <div class="flex items-center">
                 <input id="intent-yes" name="entry.490715982" type="radio" value="了解並有意願" required
                        class="focus:ring-sky-500 h-4 w-4 text-sky-600 border-gray-300">
-                <label for="intent-yes" class="ml-3 block text-sm font-medium text-gray-700">了解並有意願</label>
+                <label for="intent-yes" data-key="form_intent_yes" class="ml-3 block text-sm font-medium text-gray-700">理解しており、希望します</label>
             </div>
             <div class="flex items-center">
                 <input id="intent-more" name="entry.490715982" type="radio" value="需要進一步說明" required
                        class="focus:ring-sky-500 h-4 w-4 text-sky-600 border-gray-300">
-                <label for="intent-more" class="ml-3 block text-sm font-medium text-gray-700">需要進一步說明</label>
+                <label for="intent-more" data-key="form_intent_more" class="ml-3 block text-sm font-medium text-gray-700">詳細説明を希望します</label>
             </div>
             <div class="flex items-center">
                 <input id="intent-no" name="entry.490715982" type="radio" value="暫無意願" required
                        class="focus:ring-sky-500 h-4 w-4 text-sky-600 border-gray-300">
-                <label for="intent-no" class="ml-3 block text-sm font-medium text-gray-700">暫無意願</label>
+                <label for="intent-no" data-key="form_intent_no" class="ml-3 block text-sm font-medium text-gray-700">現時点では希望しません</label>
             </div>
         </div>
     </div>
 
     <div class="mt-6">
-        <label class="block text-sm font-medium text-gray-700 mb-2">可協助推廣的客人數</label>
+        <label data-key="form_size_label" class="block text-sm font-medium text-gray-700 mb-1">想定集客数</label>
         <select name="entry.718190300" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500 sm:text-sm">
-            <option value="1–3 人">1–3 人</option>
-            <option value="4–6 人">4–6 人</option>
-            <option value="6 人以上">6 人以上</option>
+            <option value="1–3 人" data-key="form_size_opt1">1–3 名</option>
+            <option value="4–6 人" data-key="form_size_opt2">4–6 名</option>
+            <option value="6 人以上" data-key="form_size_opt3">6 名以上</option>
         </select>
     </div>
 
     <div class="mt-6">
-        <label for="remarks" class="block text-sm font-medium text-gray-700 mb-1">備註 (任何意見)</label>
+        <label for="remarks" data-key="form_remarks_label" class="block text-sm font-medium text-gray-700 mb-1">備考 (その他意見)</label>
         <textarea id="remarks" name="entry.257154856" rows="3"
-                  placeholder="我想確認..."
+                  data-key-placeholder="form_remarks_placeholder" placeholder="..."
                   class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500 sm:text-sm"></textarea>
     </div>
 
@@ -297,7 +297,6 @@
   
    <!-- 隠し iFrame：Googleフォームの送信結果を受け取るために使用 -->
    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="window.formSubmitted()"></iframe>
-
 
    <script>
        // --- 多言語対応用の翻訳データオブジェクト ---
@@ -337,19 +336,39 @@
                faq3_a: "A: クッキーと専用 ID 検証を含むプロフェッショナルなクロスプラットフォーム追跡技術を使用しています。お客様があなたの専用リンクをクリックした後、設定された追跡期間内に予約を完了すれば、注文は正確かつリアルタイムにあなたのアカウントに記録されます。",
                faq4_q: "Q: JNC が提供するサービス内容は合法ですか？",
                faq4_a: "A: JNC は日本の法律に準拠した合法的な予約およびコンシェルジュサービスのみを提供し、すべての業界ガイドラインを厳守しています。安全で信頼性が高く、高水準のサービスを提供することで、安心してプロモーションを行っていただけます。",
+               
+               // --- フォーム関連 (更新済み) ---
                form_title: "今すぐアフィリエイトパートナーに応募",
                form_subtitle: "以下の情報をご記入ください。48時間以内に審査を行い、専用のトラッキングIDを発行します。",
                form_name_label: "氏名／プロモーションニックネーム",
                form_name_placeholder: "例：山田太郎 / 旅の達人A",
-               form_email_label: "連絡先 (Line ID / 電話 / Email)",
-               form_email_placeholder: "Line ID または 電話番号",
+               
+               // 新しい連絡先フィールド
+               form_contact_label: "連絡先 (Line ID / 電話 / Email)",
+               form_contact_placeholder: "Line ID または 電話番号 または Email",
+               
                form_platform_label: "主なプロモーションプラットフォーム (例：YouTube/IG/ブログ)",
                form_platform_placeholder: "プラットフォーム名またはリンクをご提供ください",
-               form_followers_label: "オーディエンス規模／フォロワー数 (任意)",
-               form_followers_placeholder: "推定フォロワー数",
+               
+               // 新しい意思確認フィールド
+               form_intent_label: "台湾からの訪日客を紹介する提携について理解していますか？",
+               form_intent_yes: "理解しており、希望します",
+               form_intent_more: "詳細説明を希望します",
+               form_intent_no: "現時点では希望しません",
+               
+               // 新しい人数規模フィールド
+               form_size_label: "想定集客数 / 運営規模",
+               form_size_opt1: "1–3 名",
+               form_size_opt2: "4–6 名",
+               form_size_opt3: "6 名以上",
+               
+               // 新しい備考フィールド
+               form_remarks_label: "備考 (その他意見)",
+               form_remarks_placeholder: "確認したいことなど...",
+
                form_submit_cta: "応募を送信し、審査を待つ",
                form_submitting: "データ送信中... しばらくお待ちください",
-               form_success: "✅ 応募成功！ご記入いただきありがとうございます。あなたのデータはGoogleフォームに安全に送信されました。審査確認メールを送信しました。審査結果は48時間以内に通知されます。",
+               form_success: "✅ 応募成功！ご記入いただきありがとうございます。あなたのデータはGoogleフォームに安全に送信されました。審査結果は48時間以内に通知されます。",
                form_error: "⚠️ 処理中、またはエラーが発生した可能性があります。応募は送信された可能性があります。メールを確認してください。",
                footer_copyright: "© 2025 JNC プロフェッショナル予約プラットフォーム。すべての権利を保有します。",
                footer_terms: "協力に関する規約と詳細については、契約書を参照してください。",
@@ -389,19 +408,39 @@
                faq3_a: "A: We use professional cross-platform tracking technology (including cookies and dedicated ID verification). As long as the customer completes a booking within the tracking period after clicking your link, the order will be accurately recorded.",
                faq4_q: "Q: Are JNC's services legal?",
                faq4_a: "A: JNC only provides legal booking and concierge services compliant with Japanese law and strictly adheres to all industry guidelines. We are committed to providing safe, reliable, and high-standard services, ensuring you can promote with confidence.",
+               
+               // --- Form Updates ---
                form_title: "Apply Now to Become an Affiliate Partner",
                form_subtitle: "Please fill out the information below. We will review it and issue your exclusive tracking ID within 48 hours.",
                form_name_label: "Your Name / Promoter Nickname",
                form_name_placeholder: "e.g., John Smith / Travel Guru A",
-               form_email_label: "Email Address",
-               form_email_placeholder: "For receiving tracking ID and payout notifications",
+               
+               // Contact Field
+               form_contact_label: "Contact Info (Line ID / Phone / Email)",
+               form_contact_placeholder: "Line ID, Phone Number or Email",
+               
                form_platform_label: "Primary Promotion Platform (e.g., YouTube/IG/Blog)",
                form_platform_placeholder: "Please provide your platform name or link",
-               form_followers_label: "Audience Size / Follower Count (Optional)",
-               form_followers_placeholder: "Estimated follower count",
+               
+               // Intent Field
+               form_intent_label: "Do you understand and wish to promote Japanese services to Taiwanese guests?",
+               form_intent_yes: "Yes, I understand and wish to join",
+               form_intent_more: "I need more information",
+               form_intent_no: "Not interested at the moment",
+               
+               // Size Field
+               form_size_label: "Estimated Audience / Team Size",
+               form_size_opt1: "1–3 People",
+               form_size_opt2: "4–6 People",
+               form_size_opt3: "6+ People",
+               
+               // Remarks Field
+               form_remarks_label: "Remarks / Comments",
+               form_remarks_placeholder: "Any questions or comments...",
+
                form_submit_cta: "Submit Application and Await Review",
                form_submitting: "Submitting data... Please wait",
-               form_success: "✅ Application Success! Thank you for submitting. Your data has been securely sent to the Google Form. We have sent a confirmation email; results will be notified within 48 hours.",
+               form_success: "✅ Application Success! Thank you for submitting. Your data has been securely sent to the Google Form. The review result will be communicated within 48 hours through the contact information you provided.",
                form_error: "⚠️ Processing or an error may have occurred. Your application might have been submitted. Please check your email for confirmation.",
                footer_copyright: "© 2025 JNC Professional Booking Platform. All rights reserved.",
                footer_terms: "Please refer to the contract for terms and conditions regarding collaboration.",
@@ -441,19 +480,39 @@
                faq3_a: "A: 전문적인 교차 플랫폼 추적 기술(쿠키 및 전용 ID 검증 포함)을 사용합니다. 고객이 귀하의 전용 링크를 클릭한 후 추적 기간 내에 예약을 완료하는 한, 주문은 정확하게 기록됩니다.",
                faq4_q: "Q: JNC에서 제공하는 서비스는 합법적인가요?",
                faq4_a: "A: JNC는 일본 법률을 준수하는 합법적인 예약 및 컨시어지 서비스만을 제공하며, 모든 산업 지침을 엄격히 준수합니다. 안전하고 신뢰할 수 있으며 높은 수준의 서비스를 제공하여 안심하고 홍보할 수 있습니다.",
+               
+               // --- Form Updates ---
                form_title: "지금 제휴 파트너로 신청하세요",
                form_subtitle: "아래 정보를 작성해 주시면, 48시간 이내에 심사를 거쳐 전용 추적 ID를 발급해 드립니다.",
                form_name_label: "귀하의 이름/홍보 닉네임",
                form_name_placeholder: "예: 김철수 / 여행 전문가 A",
-               form_email_label: "이메일 주소",
-               form_email_placeholder: "추적 ID 및 지급 통지 수신용",
+               
+               // Contact
+               form_contact_label: "연락처 (Line ID / 전화번호 / 이메일)",
+               form_contact_placeholder: "Line ID, 전화번호 또는 이메일",
+               
                form_platform_label: "주요 홍보 플랫폼 (예: YouTube/IG/블로그)",
                form_platform_placeholder: "플랫폼 이름 또는 링크를 제공해 주세요",
-               form_followers_label: "잠재 고객 규모/팔로워 수 (선택 사항)",
-               form_followers_placeholder: "예상 팔로워 수",
+               
+               // Intent
+               form_intent_label: "대만 고객에게 일본 서비스를 소개하는 제휴 내용을 이해하셨습니까?",
+               form_intent_yes: "네, 이해했으며 참여를 희망합니다",
+               form_intent_more: "추가 설명이 필요합니다",
+               form_intent_no: "지금은 희망하지 않습니다",
+               
+               // Size
+               form_size_label: "예상 모객 수 / 운영 규모",
+               form_size_opt1: "1–3 명",
+               form_size_opt2: "4–6 명",
+               form_size_opt3: "6명 이상",
+               
+               // Remarks
+               form_remarks_label: "비고 (기타 의견)",
+               form_remarks_placeholder: "문의 사항 등...",
+
                form_submit_cta: "신청서 제출 및 심사 대기",
                form_submitting: "데이터 전송 중... 잠시만 기다려 주세요",
-               form_success: "✅ 신청 성공! 제출해 주셔서 감사합니다. 귀하의 데이터는 Google 양식에 안전하게 전송되었습니다. 심사 확인 이메일을 발송했습니다. 결과는 48시간 이내에 통지됩니다.",
+               form_success: "✅ 신청 성공! 제출해 주셔서 감사합니다. 귀하의 데이터는 Google 양식에 안전하게 전송되었습니다. 심사 결과는 48시간 이내에 등록하신 연락처로 안내해 드리겠습니다.",
                form_error: "⚠️ 처리 중이거나 오류가 발생했을 수 있습니다. 신청이 제출되었을 수 있습니다. 이메일을 확인하십시오.",
                footer_copyright: "© 2025 JNC 전문 예약 플랫폼. 모든 권리 보유.",
                footer_terms: "협력 관련 약관 및 세부 사항은 계약서를 참조하십시오.",
@@ -493,20 +552,40 @@
                faq3_a: "A: 我們使用專業的跨平台追蹤技術（包含 Cookie 和專屬 ID 驗證）。只要客戶在點擊您的專屬連結後的一定追蹤期限內完成預約，訂單即會準確、即時地記錄在您的帳戶下。",
                faq4_q: "Q: JNC 提供的服務內容是否合法？",
                faq4_a: "A: JNC 僅提供符合日本法律規範的合法預約與禮賓服務，並嚴格遵守所有行業準則。我們致力於提供安全、可靠、高標準的服務，讓您推廣無後顧之憂。",
+               
+               // --- Form Updates ---
                form_title: "立即申請成為推廣大使",
                form_subtitle: "請填寫以下資訊，我們將在 48 小時內審核並發出您的專屬推薦碼。",
                form_name_label: "您的姓名/推廣暱稱",
                form_name_placeholder: "例如：王小明 / 旅遊達人A",
-               form_email_label: "電子郵件",
-               form_email_placeholder: "用於接收推薦碼與結算通知",
+               
+               // Contact
+               form_contact_label: "聯絡方式 (Line ID / 手機 / Email)",
+               form_contact_placeholder: "請填寫 Line ID 或手機號碼 或 Email",
+               
                form_platform_label: "主要推廣平台 (例如：YouTube/IG/部落格)",
                form_platform_placeholder: "請提供您的平台名稱或連結",
-               form_followers_label: "受眾規模/粉絲數 (選填)",
-               form_followers_placeholder: "預估粉絲人數",
+               
+               // Intent
+               form_intent_label: "您是否了解並歡迎介紹台灣客人赴日消費之合作推廣？",
+               form_intent_yes: "了解並有意願",
+               form_intent_more: "需要進一步說明",
+               form_intent_no: "暫無意願",
+               
+               // Size
+               form_size_label: "可協助推廣的客人數 / 運營規模",
+               form_size_opt1: "1–3 人",
+               form_size_opt2: "4–6 人",
+               form_size_opt3: "6 人以上",
+               
+               // Remarks
+               form_remarks_label: "備註 (任何意見)",
+               form_remarks_placeholder: "我想確認...",
+
                form_submit_cta: "送出申請，等待審核",
                form_submitting: "資料送出中... 請稍候",
-               form_success: "✅ 申請成功！感謝您的填寫。您的資料已安全送達 Google 表單。我們已發送審核確認信至您的信箱，審核結果將於 48 小時內通知。",
-               form_error: "⚠️ 正在處理中或可能發生錯誤。您的申請可能已送出，請檢查您的電子郵件以確認。",
+               form_success: "✅ 申請成功！感謝您的填寫。您的資料已安全送達 Google 表單。審核結果將於 48 小時內，依您所填寫之聯絡方式通知，請留意相關訊息。",
+               form_error: "⚠️ 正在處理中或可能發生錯誤。請再嘗試一次，謝謝您。",
                footer_copyright: "© 2025 JNC 專業預約平台。所有權利保留。",
                footer_terms: "合作相關條款與細則請參閱合約。",
            },
@@ -635,6 +714,7 @@
    </script>
 </body>
 </html>
+
 
 
 
