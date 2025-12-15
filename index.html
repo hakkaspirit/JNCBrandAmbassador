@@ -216,65 +216,63 @@
     
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
-            <label for="name" data-key="form_name_label" class="block text-sm font-medium text-gray-700 mb-1">氏名／プロモーションニックネーム <span class="text-sky-500">*</span></label>
+            <label for="name" data-key="form_name_label" class="block text-sm font-medium text-gray-700 mb-1">推廣者暱稱 <span class="text-sky-500">*</span></label>
             <input type="text" id="name" name="entry.289485734" required
-                   data-key-placeholder="form_name_placeholder" placeholder="例：山田太郎 / 旅の達人A"
+                   data-key-placeholder="form_name_placeholder" placeholder="例：王小明 / 旅遊達人A"
                    class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500 sm:text-sm">
         </div>
         <div>
-            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">聯絡方式 (請填寫Email) <span class="text-sky-500">*</span></label>
-            <input type="email" id="email" name="entry.2042662270" required
-                   data-key-placeholder="form_email_placeholder" placeholder="トラッキングIDと決済通知の受信用"
+            <label for="contact" class="block text-sm font-medium text-gray-700 mb-1">聯絡方式 (Line ID / 手機 / Email) <span class="text-sky-500">*</span></label>
+            <input type="text" id="contact" name="entry.2042662270" required
+                   placeholder="請填寫 Line ID 或手機號碼"
                    class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500 sm:text-sm">
         </div>
     </div>
 
-   <div class="space-y-3">
-            <div class="flex items-center">
-                <input id="option-yes" name="entry.490715982" type="radio" value="了解並有意願" required
-                       class="focus:ring-sky-500 h-4 w-4 text-sky-600 border-gray-300">
-                <label for="option-yes" class="ml-3 block text-sm font-medium text-gray-700">
-                    了解並有意願
-                </label>
-            </div>
-            
-            <div class="flex items-center">
-                <input id="option-more" name="entry.490715982" type="radio" value="需要進一步說明" required
-                       class="focus:ring-sky-500 h-4 w-4 text-sky-600 border-gray-300">
-                <label for="option-more" class="ml-3 block text-sm font-medium text-gray-700">
-                    需要進一步說明
-                </label>
-            </div>
-
-            <div class="flex items-center">
-                <input id="option-no" name="entry.490715982" type="radio" value="暫無意願" required
-                       class="focus:ring-sky-500 h-4 w-4 text-sky-600 border-gray-300">
-                <label for="option-no" class="ml-3 block text-sm font-medium text-gray-700">
-                    暫無意願
-                </label>
-            </div>
-        </div>
-
     <div class="mt-6">
-        <label for="platform" data-key="form_platform_label" class="block text-sm font-medium text-gray-700 mb-1">主要プロモーションプラットフォーム (例：YouTube/IG/ブログ)</label>
-        <input type="text" id="platform" name="entry.257154856"
-               data-key-placeholder="form_platform_placeholder" placeholder="プラットフォーム名またはリンクをご提供ください"
+        <label for="platform" data-key="form_platform_label" class="block text-sm font-medium text-gray-700 mb-1">主要推廣平台 (例：YouTube/IG/部落格)</label>
+        <input type="text" id="platform" name="entry.322116969"
+               data-key-placeholder="form_platform_placeholder" placeholder="IG / FB / YouTube 連結"
                class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500 sm:text-sm">
-    </div>
-
-    <div class="mt-6">
-        <label class="block text-sm font-medium text-gray-700 mb-1">運営規模 / 人數</label>
-        <select name="entry.718190300" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500 sm:text-sm">
-            <option value="1–3 人">1–3 人</option>
-            <option value="4–10 人">4–10 人</option>
-            <option value="10 人以上">10 人以上</option>
-        </select>
     </div>
 
     <div class="mt-6">
         <label class="block text-sm font-medium text-gray-700 mb-2">
             您是否了解並歡迎介紹台灣客人赴日消費之合作推廣？ <span class="text-sky-500">*</span>
-        </label>          
+        </label>
+        <div class="space-y-3">
+            <div class="flex items-center">
+                <input id="intent-yes" name="entry.490715982" type="radio" value="了解並有意願" required
+                       class="focus:ring-sky-500 h-4 w-4 text-sky-600 border-gray-300">
+                <label for="intent-yes" class="ml-3 block text-sm font-medium text-gray-700">了解並有意願</label>
+            </div>
+            <div class="flex items-center">
+                <input id="intent-more" name="entry.490715982" type="radio" value="需要進一步說明" required
+                       class="focus:ring-sky-500 h-4 w-4 text-sky-600 border-gray-300">
+                <label for="intent-more" class="ml-3 block text-sm font-medium text-gray-700">需要進一步說明</label>
+            </div>
+            <div class="flex items-center">
+                <input id="intent-no" name="entry.490715982" type="radio" value="暫無意願" required
+                       class="focus:ring-sky-500 h-4 w-4 text-sky-600 border-gray-300">
+                <label for="intent-no" class="ml-3 block text-sm font-medium text-gray-700">暫無意願</label>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-6">
+        <label class="block text-sm font-medium text-gray-700 mb-2">可協助推廣的客人數</label>
+        <select name="entry.718190300" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500 sm:text-sm">
+            <option value="1–3 人">1–3 人</option>
+            <option value="4–6 人">4–6 人</option>
+            <option value="6 人以上">6 人以上</option>
+        </select>
+    </div>
+
+    <div class="mt-6">
+        <label for="remarks" class="block text-sm font-medium text-gray-700 mb-1">備註 (任何意見)</label>
+        <textarea id="remarks" name="entry.257154856" rows="3"
+                  placeholder="我想確認..."
+                  class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500 sm:text-sm"></textarea>
     </div>
 
     <div class="mt-8">
@@ -284,6 +282,7 @@
         </button>
     </div>
 </form>
+       
     </div>
 </section>
 
@@ -342,8 +341,8 @@
                form_subtitle: "以下の情報をご記入ください。48時間以内に審査を行い、専用のトラッキングIDを発行します。",
                form_name_label: "氏名／プロモーションニックネーム",
                form_name_placeholder: "例：山田太郎 / 旅の達人A",
-               form_email_label: "メールアドレス",
-               form_email_placeholder: "トラッキングIDと決済通知の受信用",
+               form_email_label: "連絡先 (Line ID / 電話 / Email)",
+               form_email_placeholder: "Line ID または 電話番号",
                form_platform_label: "主なプロモーションプラットフォーム (例：YouTube/IG/ブログ)",
                form_platform_placeholder: "プラットフォーム名またはリンクをご提供ください",
                form_followers_label: "オーディエンス規模／フォロワー数 (任意)",
@@ -636,6 +635,7 @@
    </script>
 </body>
 </html>
+
 
 
 
